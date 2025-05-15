@@ -1,0 +1,59 @@
+é possivel utilizar
+
+let umaString = "Um \"texto\""; como forma de escapar do: (A barra invertida ela é uma forma de escape.)
+let umaString = 'Um "texto"'; 
+
+é mais indicado utilizar a forma de baixo   
+
+
+strings são indexadas. cada caractere tem 1 indice começa de 0 assim por diante
+da pra utilizar o 
+
+console.log(umaString[de 0 a 7, pois a variavel vai ate o indice 7])
+
+
+tambem é possivel usar o:
+
+console.log(umaString.charAt(7));
+
+para realizar contatenações:
+
+console.log(umaString.concat(Melhor forma é utlizando template strings aqui!))
+
+para achar o index do começo de alguma palavra:
+
+console.log(umaString.indexOf('texto')); SE DER -1 É PORQUE NÃO ENCONTROU NADA!
+
+Uma forma de achar um indice apartir de algum outro indice faz dessa forma:
+
+console.log(umaString.indexOf('Um', 3)) Vai procurar o "Um" apartir do index 3
+
+Mesma coisa só que procurando do final pro inicio:
+
+console.log(umaString.lastIndexOf('o'));
+
+Para achar apartir de um indice, faz dessa mesma forma:
+
+console.log(umaString.lastIndexOf('o', 3))
+
+pesquisar nos indices:
+
+console.log(umaString.search())
+
+para modificar uma string, podemos utilizar o seguinte codigo:
+
+console.log(umaString.replace('Um', 'Outra'));
+
+pode-se usar dessa forma tambem:
+
+console.log(umaString.replace(/r/g, 'OutraCoisa'));
+
+Para descobrir o tamanho de uma string, pode usar isso:
+
+console.log(umaString.length);
+
+Para pegar palavras em strings, da pra usar esse codigo:
+
+console.log(umaString.slice(2, 6));
+
+// PAREI PRA DORMIR, VOU SÓ PASSAR PRO INDEX E DORMIR
