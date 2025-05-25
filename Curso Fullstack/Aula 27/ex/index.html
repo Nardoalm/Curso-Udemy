@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NardoDev</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.2em;
+            margin-bottom: 25px;
+        }
+
+        #numero-titulo {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .resultado-frase {
+            color: #555;
+            margin-top: 20px;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        .resultado-valor {
+            color: #28a745;
+            /* Cor verde para valores positivos/booleanos true */
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .resultado-valor.negativo {
+            color: #dc3545;
+            /* Cor vermelha para valores negativos/booleanos false */
+        }
+
+        .resultado-valor.nan {
+            color: #ffc107;
+            /* Cor amarela para NaN */
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>O seu número é: <span id="numero-titulo">0</span></h1>
+        <div id="texto1"></div>
+        <div id="texto2"></div>
+        <div id="texto3"></div>
+        <div id="texto4"></div>
+        <div id="texto5"></div>
+        <div id="texto6"></div>
+        <div id="texto7"></div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
